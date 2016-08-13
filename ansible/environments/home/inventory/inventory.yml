@@ -1,0 +1,5 @@
+[router]
+172.16.5.2
+
+[router:vars]
+ansible_user=phil
