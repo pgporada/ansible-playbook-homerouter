@@ -1,4 +1,4 @@
-- hosts: homerouter
+- hosts: router
   remote_user: "{{ remote_user }}"
   become: true
   become_method: sudo
