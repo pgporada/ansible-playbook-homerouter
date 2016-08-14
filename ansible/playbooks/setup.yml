@@ -1,6 +1,10 @@
 - hosts: homerouter
   remote_user: "{{ remote_user }}"
+  become: true
+  become_method: sudo
   roles:
+    - base
     - pgporada.dhcpd
+    - pgporada.vim
 
 

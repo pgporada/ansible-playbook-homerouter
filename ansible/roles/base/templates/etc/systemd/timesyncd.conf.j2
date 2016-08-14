@@ -1,0 +1,3 @@
+[Time]
+NTP={% for srv in base_ntp_timeservers %}{{ srv }}{% if not loop.last %} {% endif %}{% endfor %}
+FallbackNTP={% for srv in base_ntp_timeservers_fallback %}{{ srv }}{% if not loop.last %} {% endif %}{% endfor %}

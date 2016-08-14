@@ -2,3 +2,8 @@
   name: pgporada.dhcpd
   scm: git
   version: master
+
+- src: https://github.com/pgporada/ansible-role-vim
+  name: pgporada.vim
+  scm: git
+  version: master

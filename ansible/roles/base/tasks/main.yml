@@ -1,0 +1,21 @@
+---
+- name: Use systemd to set timezone
+  become: true
+  shell: timedatectl "{{ base_systemd_timezone }}"
+
+- name: Deploy the timesyncd template
+  template:
+    src: etc/systemd/timesyncd.conf.j2
+    dest: /etc/systemd/timesyncd.conf
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Use systemd to manage ntp
+  become: true
+  shell: timedatectl set-ntp "{{ base_systemd_ntp_enabled }}"
+  register: ntp_status
+
+- debug:
+    msg: ntp_status
+
