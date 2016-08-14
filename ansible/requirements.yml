@@ -7,3 +7,13 @@
   name: pgporada.vim
   scm: git
   version: master
+
+- src: https://github.com/pgporada/ansible-role-ntp
+  name: pgporada.ntp
+  scm: git
+  version: master
+
+- src: https://github.com/pgporada/ansible-role-ntp-systemd
+  name: pgporada.ntp-systemd
+  scm: git
+  version: master

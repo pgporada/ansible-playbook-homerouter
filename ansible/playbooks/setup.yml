@@ -6,5 +6,7 @@
     - base
     - pgporada.dhcpd
     - pgporada.vim
+    - pgporada.ntp
+    - pgporada.ntp-systemd
 
 
