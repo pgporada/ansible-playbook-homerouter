@@ -1,2 +1,4 @@
 ansible/roles/pgporada.*
 ansible/environments/home/group_vars/router.yml
+ansible/environments/home/inventory/inventory.yml
+
